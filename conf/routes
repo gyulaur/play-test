@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Test.main
+
+# Test
+GET     /simple                     controllers.Test.simple
+GET     /test/:name                 controllers.Test.index(name: String)
+GET     /nf                         controllers.Test.nf
+GET     /ise                        controllers.Test.ise
+GET     /rdr                        controllers.Test.rdr
+GET     /rdr2                       controllers.Test.rdr2
+GET     /ni                         controllers.Test.ni
+GET     /dyn/:id                    controllers.Test.dyn(id: Long)
+GET     /res                        controllers.Test.res
+
+GET     /ses                        controllers.Ses.index
+GET     /ses/put                    controllers.Ses.putValue
+GET     /ses/reset                  controllers.Ses.reset
+GET     /ses/discard                controllers.Ses.discard
+GET     /ses/fl                     controllers.Ses.fl
+GET     /ses/fls                    controllers.Ses.fls
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

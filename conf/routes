@@ -16,12 +16,12 @@ GET     /ni                         controllers.Test.ni
 GET     /dyn/:id                    controllers.Test.dyn(id: Long)
 GET     /res                        controllers.Test.res
 
-GET     /ses                        controllers.Ses.index
-GET     /ses/put                    controllers.Ses.putValue
-GET     /ses/reset                  controllers.Ses.reset
-GET     /ses/discard                controllers.Ses.discard
-GET     /ses/fl                     controllers.Ses.fl
-GET     /ses/fls                    controllers.Ses.fls
+GET     /ses                        controllers.SessionTest.index
+GET     /ses/put                    controllers.SessionTest.putValue
+GET     /ses/reset                  controllers.SessionTest.reset
+GET     /ses/discard                controllers.SessionTest.discard
+GET     /ses/fl                     controllers.SessionTest.fl
+GET     /ses/fls                    controllers.SessionTest.fls
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

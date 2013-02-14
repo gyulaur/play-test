@@ -2,7 +2,7 @@ package controllers
 
 import play.api.mvc.{Action, Controller}
 
-object Ses extends Controller {
+object SessionTest extends Controller {
 
   def index = Action { implicit request =>
     session.get("connected").map {

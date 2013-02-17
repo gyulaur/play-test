@@ -27,5 +27,8 @@ GET     /ses/fls                    controllers.SessionTest.fls
 GET     /async                      controllers.Async.index
 GET     /async/timeout              controllers.Async.timeout
 
+# Comet
+GET     /comet                      controllers.CometSocket.comet
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
